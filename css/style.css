@@ -14,18 +14,21 @@ header {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	color: white;
-	padding: 1.5rem;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	padding-top: 10px;
 }
 
-nav a {
-	margin-right: 2rem;
+h1 a {
+	padding-left: 20px;
 	color: white;
 	text-decoration: none;
+}
+
+.navbar {
 	font-size: 1.5rem;
+	text-decoration: none;
+	margin-right: 20px;
 }
 
 a:hover {
@@ -50,30 +53,59 @@ a:hover {
 	backdrop-filter: blur(9px);
 }
 
-main {
-	padding: 50px;
+.video {
+	padding: 0px 20px 80px 40px;
 }
 
-.video-content {
+.video-description {
 	margin: auto;
 	width: 90%;
-	padding-bottom: 40px;
+	padding: 0px 40px 20px 40px;
 	font-size: 1rem;
 }
 
 .iframe-container {
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 */
-  position: relative;
-} 
+	overflow: hidden;
+	padding-top: 56.25%; /* 16:9 */
+	position: relative;
+}
 
 .iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
+	/*this is to center and make reponsive the video */
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	border: 0;
+	width: 80%;
+	height: 80%;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url(../../images/fans.jpg);
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.stats {
+	grid-area: stats;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 50px;
+}
+
+.png {
+	width: 80px;
+	height: 80px;
 }
 
 footer {
@@ -90,20 +122,19 @@ footer {
 		height: 60px;
 	}
 
-	.video-content {
+	.video-description {
 		margin: auto;
 		width: 80%;
 		padding: 0px 40px;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
-	main {
+	.video {
 		grid-area: main;
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		padding-top: 50px;
 	}
-
 }
 
 @media (min-width: 1200px) {
@@ -111,26 +142,17 @@ footer {
 		height: 80px;
 	}
 
-	.video-content {
+	.video-description {
 		margin: auto;
 		width: 80%;
 		padding-bottom: 40px;
 		font-size: 1.8rem;
 	}
 
-	main {
+	.video {
 		grid-area: main;
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		padding-top: 50px;
 	}
-	.iframe-container iframe {
-  		position: absolute;
-  		top: 0;
-  		left: 0;
-  		border: 0;
-  		width: 80%;
-  		height: 80%;
-	}
-
 }

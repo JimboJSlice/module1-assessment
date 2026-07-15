@@ -24,12 +24,47 @@
 	</head>
 	<body>
 		<header>
-			<h1>Kobe McDonald</h1>
-			<nav>
-				<a href="#">Bio</a>
-				<a href="#">Gallery</a>
-				<a href="#">News</a>
-			</nav>
+			<h1><a href="index.html">Kobe McDonald</a></h1>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link"
+								>Bio</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link"
+								>Gallery</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link"
+								>News</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		</header>
 
 		<div class="hero">
@@ -43,7 +78,8 @@
 		<div class="angled-divider"></div>
 
 		<main>
-			<section class="video-content">
+			<div class="video">
+			<section class="video-description">
 				<p>
 				Every great story has a beginning. For Kobe McDonald, that story is
 				rooted in one of Mayo football's most iconic names. Before forging his
@@ -75,13 +111,47 @@
 				allowfullscreen
 				></iframe>
 			</aside>
-
+			</div>
 		<div class="parallax">
 		</div>
+
+		<div class="stats">
+			<section class="png">
+				<img src="images/Kobe-parallax.png" alt="Kobe running with the ball">
+			</section>
+
+			<aside class="table">
+				<table>
+  					<tr>
+    					<th>Company</th>
+    					<th>Contact</th>
+    					<th>Country</th>
+  					</tr>
+  					<tr>
+    					<td>Alfreds Futterkiste</td>
+    					<td>Maria Anders</td>
+    					<td>Germany</td>
+  					</tr>
+  					<tr>
+    					<td>Centro comercial Moctezuma</td>
+    					<td>Francisco Chang</td>
+    					<td>Mexico</td>
+  					</tr>
+				</table>
+			</aside>
+		
+		</div>
+
 
 		</main>
 		<footer>
 			<p>Footer Content</p>
 		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

@@ -20,9 +20,10 @@ header {
 }
 
 h1 a {
-	padding-left: 20px;
+	margin-left: 20px;
 	color: white;
 	text-decoration: none;
+	background-color: green;
 }
 
 .navbar {
@@ -57,7 +58,7 @@ a:hover {
 	padding: 0px 20px 80px 40px;
 }
 
-.video-description {
+section {
 	margin: auto;
 	width: 90%;
 	padding: 0px 40px 20px 40px;
@@ -96,17 +97,7 @@ a:hover {
 	background-size: cover;
 }
 
-.stats {
-	grid-area: stats;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: 50px;
-}
 
-.png {
-	width: 80px;
-	height: 80px;
-}
 
 footer {
 	grid-area: footer;
@@ -116,13 +107,17 @@ footer {
 	padding: 20px;
 }
 
+/* Bio */
+
+
+
 @media (min-width: 768px) {
 	.angled-divider {
 		top: -60px;
 		height: 60px;
 	}
 
-	.video-description {
+	section {
 		margin: auto;
 		width: 80%;
 		padding: 0px 40px;
@@ -130,10 +125,17 @@ footer {
 	}
 
 	.video {
-		grid-area: main;
+		grid-area: video;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding-top: 50px;
+	}
+
+	.stats {
+	grid-area: stats;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 50px;
 	}
 }
 
@@ -142,7 +144,7 @@ footer {
 		height: 80px;
 	}
 
-	.video-description {
+	section {
 		margin: auto;
 		width: 80%;
 		padding-bottom: 40px;
@@ -150,9 +152,16 @@ footer {
 	}
 
 	.video {
-		grid-area: main;
+		grid-area: video;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding-top: 50px;
+	}
+
+	.stats {
+	grid-area: stats;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 50px;
 	}
 }

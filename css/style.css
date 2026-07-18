@@ -81,7 +81,7 @@ section {
 
 .parallax {
 	/* The image used */
-	background-image: url(../../images/fans.jpg);
+	background-image: url(../images/fans.jpg);
 
 	/* Set a specific height */
 	min-height: 500px;

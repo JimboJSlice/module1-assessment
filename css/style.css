@@ -81,13 +81,9 @@ section {
 }
 
 .parallax {
-	/* The image used */
-	background-image: url(../images/fans.jpg);
-
-	/* Set a specific height */
-	min-height: 500px;
-
 	/* Create the parallax scrolling effect */
+	background-image: url(../images/fans.jpg);
+	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -123,6 +119,13 @@ section a {
 	color: green;
 }
 
+button {
+	background-color: #14983c;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+}
+
 footer {
 	grid-area: footer;
 	background-color: green;
@@ -143,11 +146,37 @@ section img {
 	width: 80%;
 }
 
+.bio_description {
+	padding: 30px;
+}
+
+.bio_description h2 {
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	color: #14983c;
+	text-align: center;
+}
+
+.bio_description h3 {
+	color: red;
+	text-align: center;
+}
+
 /* Gallery */
+.main_gallery {
+	margin-left: 20px;
+}
+
+.main_gallery p {
+	margin: 0;
+}
+
 
 /*News */
 
-
+.news-container h1, p{
+	margin-left: 20px;
+}
 
 .news {
 	margin: auto;
@@ -159,7 +188,7 @@ section img {
 	background: white;
 	border-radius: 18px;
 	border-style: solid;
-	margin: 20px;
+	margin: 20px 0px 50px 20px;
 	overflow: hidden; /* keep image inside card */
 	text-decoration: none;
 	color: inherit; /* remove blue from link */
@@ -195,11 +224,7 @@ section img {
 
 .contact {
 	margin-top: 50px;
-}
-
-.contact p {
-	margin-bottom: 40px;
-	margin-left: 0;
+	margin-bottom: 50px;
 }
 
 form {
@@ -207,25 +232,19 @@ form {
 	margin: auto;
 	padding: 1rem;
 	border: 3px solid;
-    border-radius: 18px;
+	border-radius: 18px;
 }
 
 label {
-    display: block;
-    margin-top: 1rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-}
-
-button {
-    background-color: #14983c;
+	display: block;
 	margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 0.25rem;
 }
 
 @media (min-width: 768px) {
@@ -274,8 +293,9 @@ button {
 	}
 
 	/* News */
-	.news-container h1, p {
-	margin-left: 30px;
+	.news-container h1,
+	p {
+		margin-left: 30px;
 	}
 
 	.news-card {
@@ -284,8 +304,8 @@ button {
 	}
 
 	.news-content h2 {
-	font-size: 1.6rem;
-}
+		font-size: 1.6rem;
+	}
 }
 
 @media (min-width: 1200px) {

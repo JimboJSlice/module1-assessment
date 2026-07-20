@@ -19,11 +19,12 @@ header {
 	padding-top: 10px;
 }
 
-h1 a {
+header h1 a {
 	margin-left: 20px;
 	color: white;
 	text-decoration: none;
 	background-color: green;
+	padding: 0px 5px;
 }
 
 .navbar {
@@ -142,6 +143,58 @@ section img {
 	width: 80%;
 }
 
+/* Gallery */
+
+/*News */
+
+.news-container h1, p {
+	margin-left: 10px;
+}
+
+.news {
+	margin: auto;
+	display: grid;
+}
+
+.news-card {
+	width: 80%;
+	background: white;
+	border-radius: 18px;
+	border-style: solid;
+	margin: 20px;
+	overflow: hidden; /* keep image inside card */
+	text-decoration: none;
+	color: inherit; /* remove blue from link */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	transition: 0.35s ease;
+}
+
+.news-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.news-card img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+.news-content {
+	padding: 20px;
+}
+
+.news-content p {
+	color: #14983c;
+	margin-bottom: 30px;
+	margin-left: inherit;
+}
+
+.read-more {
+	font-weight: bold;
+	color: #cc0000;
+}
+
 @media (min-width: 768px) {
 	.cover_image {
 		height: 600px;
@@ -186,6 +239,20 @@ section img {
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}
+
+	/* News */
+	.news-container h1, p {
+	margin-left: 30px;
+	}
+
+	.news-card {
+		display: grid;
+		grid-template-columns: 350px 1fr;
+	}
+
+	.news-content h2 {
+	font-size: 1.6rem;
+}
 }
 
 @media (min-width: 1200px) {

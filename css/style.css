@@ -147,9 +147,7 @@ section img {
 
 /*News */
 
-.news-container h1, p {
-	margin-left: 10px;
-}
+
 
 .news {
 	margin: auto;
@@ -193,6 +191,41 @@ section img {
 .read-more {
 	font-weight: bold;
 	color: #cc0000;
+}
+
+.contact {
+	margin-top: 50px;
+}
+
+.contact p {
+	margin-bottom: 40px;
+	margin-left: 0;
+}
+
+form {
+	max-width: 600px;
+	margin: auto;
+	padding: 1rem;
+	border: 3px solid;
+    border-radius: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+button {
+    background-color: #14983c;
+	margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {

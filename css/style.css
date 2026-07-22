@@ -132,6 +132,11 @@ button:hover {
 	background-color: #beb7a4;
 }
 
+.see-more {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
 footer {
 	grid-area: footer;
 	background-color: #009900;

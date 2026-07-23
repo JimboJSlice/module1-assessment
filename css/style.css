@@ -15,13 +15,14 @@ header {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	display: flex;
+	display: flex; /* Flexboox used */
 	justify-content: space-between;
 	padding-top: 10px;
 }
 
 header h1 a {
-	font-family: Helvetica, sans-serif;
+	font-family:
+		Helvetica, sans-serif; /*used a different font to make it look more like a logo */
 	font-weight: bold;
 	text-decoration: none;
 	margin-left: 20px;
@@ -48,9 +49,13 @@ a:hover {
 
 .angled-divider {
 	position: relative;
-	top: -40px;
+	top: -40px; /* I want the divider to sit every so slightly over the hero image */
 	height: 50px;
-	background: linear-gradient(3deg, rgba(0, 153, 0, 0.8), rgba(250, 0, 0, 0.8));
+	background: linear-gradient(
+		3deg,
+		rgba(0, 153, 0, 0.8),
+		rgba(250, 0, 0, 0.8)
+	); /* a small bit of opacity */
 	backdrop-filter: blur(9px);
 }
 
@@ -102,7 +107,7 @@ section {
 	width: 100%;
 	height: 250px;
 	object-fit: cover;
-	transition:
+	transition: /* CSS Transition used to give slight movement to the site */
 		transform 0.3s ease,
 		box-shadow 0.3s ease;
 	cursor: pointer;
@@ -118,26 +123,13 @@ section a {
 	color: #009900;
 }
 
-button {
-	background-color: #009900;
-	margin-top: 2rem;
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	transition:
-		background-color 0.3s ease,
-		transform 0.3s ease;
-}
-
-button:hover {
-	background-color: #beb7a4;
-}
-
 .see-more {
 	margin-top: 10px;
 	font-weight: bold;
 }
 
 footer {
+	/* center the footer always at the bottom */
 	grid-area: footer;
 	background-color: #009900;
 	color: #fffffc;
@@ -162,6 +154,7 @@ section img {
 }
 
 .bio_description h2 {
+	/* make the quote stand apart */
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	color: #009900;
@@ -180,6 +173,20 @@ section img {
 
 .main_gallery p {
 	margin: 0;
+}
+
+button {
+	background-color: #009900;
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	transition:
+		background-color 0.3s ease,
+		transform 0.3s ease;
+}
+
+button:hover {
+	background-color: #beb7a4;
 }
 
 /*News */
@@ -260,6 +267,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
+	/*responsiveness for bigger screens and addding in grid */
 	.cover_image {
 		height: 600px;
 	}
